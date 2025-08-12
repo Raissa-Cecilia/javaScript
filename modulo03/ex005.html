@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(122, 107, 255);
+            color: white;
+            font: normal 18pt Arial;
+        }
+        strong{
+            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.589);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com <strong>DOM</strong> em Java Script</h1>
+    <h1>Só teste </h1>
+    <p>Aqui vai o resuldado</p>
+    <p>Aprendendo</p>
+    <div class="msg">
+        Clique em mim
+    </div>
+    <script>
+        var corpo= window.document.body;
+        corpo.style.background= 'pink'
+        var p1 = window.document.getElementsByTagName('h1')[0];
+        window.document.write(p1.innerText);
+        p1.style.color = 'red';
+        document.write(p1.innerHTML)
+
+        /*
+        var d=window.document.getElementById('msg');
+        d.style.backgroundColor = 'yellow';
+        d.innerText= "EStou aguardando...";
+        */
+
+       var d = document.querySelector('div.msg')
+         d.style.color = 'yellow'
+    </script>
+</body>
+</html>
