@@ -3,7 +3,7 @@ function contar(){
     let fim = document.getElementById('txtF')
     let passo = document.getElementById('txtP')
     var res = document.getElementById('res')
-        if(ini.value.length ==0 || fim.value.length ==0 || passo.valuelength ==0){
+        if(ini.value.length ==0 || fim.value.length ==0 || passo.value.length ==0){
             window.alert('[ERRO] Faltam dados!');
         }
         else{
